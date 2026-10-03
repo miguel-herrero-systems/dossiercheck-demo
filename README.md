@@ -5,8 +5,6 @@ DossierCheck is a configurable workflow for checking consistency across a known 
 This repository is a **public conceptual showcase**, not the DossierCheck engine, an installable plugin, a document-upload service, or a promise that arbitrary PDFs can be checked. It contains three fictional PDF dossiers and the recorded results produced previously by the private DossierCheck 0.1.2 candidate. Opening the files here does not run AI or re-run the checks.
 
 - [Explore the live English demonstration](https://hrevn.com/en/dossiercheck/)
-- [Explorar la demostración en español](https://hrevn.com/dossiercheck/)
-- [Resumen en español](README.es.md)
 - [How the model works](docs/model.md)
 
 ## Three inspectable cases
