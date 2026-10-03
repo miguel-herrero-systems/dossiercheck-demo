@@ -1,0 +1,444 @@
+{
+  "manifest_version": "0.1",
+  "core_version": "0.1.2",
+  "generated_at_utc": "2026-10-03T11:42:05.789208+00:00",
+  "case_id": "CASE-4101",
+  "expected_case_ref": "CASE-4101",
+  "mode": "extract-and-check",
+  "status": "READY_FOR_HUMAN_REVIEW",
+  "scope_note": "Consistency against configured checks only; not authenticity, truth, legal validity or approval.",
+  "schema": {
+    "case_type": "generic_agreement_case",
+    "schema_version": "0.1",
+    "sha256": "488ad937e5771eadace6e3388799ac379c12bc41697a77284da4607259aa14bd"
+  },
+  "normalizer_version": "0.1",
+  "extractor": {
+    "name": "openai_responses",
+    "model": "gpt-6-luna"
+  },
+  "documents": [
+    {
+      "document_id": "application.pdf",
+      "filename": "application.pdf",
+      "sha256": "91c86b4a0794f681624d6785308af134da50d27712b0bf36bf0972902f07d1d5",
+      "kind": "application",
+      "page_count": 2,
+      "readable": true,
+      "issue": null
+    },
+    {
+      "document_id": "certificate.pdf",
+      "filename": "certificate.pdf",
+      "sha256": "2f0f3b4fdfacb4758313bc982eb6c901e4b3168635c4648d4ef0e2e2e94909f6",
+      "kind": "certificate",
+      "page_count": 1,
+      "readable": true,
+      "issue": null
+    },
+    {
+      "document_id": "contract.pdf",
+      "filename": "contract.pdf",
+      "sha256": "1c35b3bce03a2e2ac61c939a2d40199c2097b4f93bc55f303b8f26beb08c3e66",
+      "kind": "contract",
+      "page_count": 1,
+      "readable": true,
+      "issue": null
+    }
+  ],
+  "fields": [
+    {
+      "document_id": "application.pdf",
+      "field_id": "case_ref",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "CASE-4101",
+          "normalized_value": "CASE-4101",
+          "evidence": {
+            "ref": "application.pdf:case_ref:1:98",
+            "document_id": "application.pdf",
+            "document_sha256": "91c86b4a0794f681624d6785308af134da50d27712b0bf36bf0972902f07d1d5",
+            "page": 1,
+            "quote": "Case Reference: CASE-4101",
+            "offset": 98,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "application.pdf",
+      "field_id": "applicant_id",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "ID-4101",
+          "normalized_value": "ID-4101",
+          "evidence": {
+            "ref": "application.pdf:applicant_id:1:124",
+            "document_id": "application.pdf",
+            "document_sha256": "91c86b4a0794f681624d6785308af134da50d27712b0bf36bf0972902f07d1d5",
+            "page": 1,
+            "quote": "Applicant ID: ID-4101",
+            "offset": 124,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "application.pdf",
+      "field_id": "applicant_name",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "Iria Zorvanto Prueba",
+          "normalized_value": "iria zorvanto prueba",
+          "evidence": {
+            "ref": "application.pdf:applicant_name:1:146",
+            "document_id": "application.pdf",
+            "document_sha256": "91c86b4a0794f681624d6785308af134da50d27712b0bf36bf0972902f07d1d5",
+            "page": 1,
+            "quote": "Applicant Name: Iria Zorvanto Prueba",
+            "offset": 146,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "application.pdf",
+      "field_id": "total_amount",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "186.450,00 EUR",
+          "normalized_value": "186450.00 EUR",
+          "evidence": {
+            "ref": "application.pdf:total_amount:2:74",
+            "document_id": "application.pdf",
+            "document_sha256": "91c86b4a0794f681624d6785308af134da50d27712b0bf36bf0972902f07d1d5",
+            "page": 2,
+            "quote": "Total Amount: 186.450,00 EUR",
+            "offset": 74,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "application.pdf",
+      "field_id": "advance_payment",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "0,00 EUR",
+          "normalized_value": "0.00 EUR",
+          "evidence": {
+            "ref": "application.pdf:advance_payment:2:103",
+            "document_id": "application.pdf",
+            "document_sha256": "91c86b4a0794f681624d6785308af134da50d27712b0bf36bf0972902f07d1d5",
+            "page": 2,
+            "quote": "Advance Payment: 0,00 EUR",
+            "offset": 103,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "certificate.pdf",
+      "field_id": "case_ref",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "CASE-4101",
+          "normalized_value": "CASE-4101",
+          "evidence": {
+            "ref": "certificate.pdf:case_ref:1:54",
+            "document_id": "certificate.pdf",
+            "document_sha256": "2f0f3b4fdfacb4758313bc982eb6c901e4b3168635c4648d4ef0e2e2e94909f6",
+            "page": 1,
+            "quote": "Case Reference: CASE-4101",
+            "offset": 54,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "certificate.pdf",
+      "field_id": "applicant_id",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "ID-4101",
+          "normalized_value": "ID-4101",
+          "evidence": {
+            "ref": "certificate.pdf:applicant_id:1:80",
+            "document_id": "certificate.pdf",
+            "document_sha256": "2f0f3b4fdfacb4758313bc982eb6c901e4b3168635c4648d4ef0e2e2e94909f6",
+            "page": 1,
+            "quote": "Applicant ID: ID-4101",
+            "offset": 80,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "certificate.pdf",
+      "field_id": "applicant_name",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "Iria Zorvanto Prueba",
+          "normalized_value": "iria zorvanto prueba",
+          "evidence": {
+            "ref": "certificate.pdf:applicant_name:1:102",
+            "document_id": "certificate.pdf",
+            "document_sha256": "2f0f3b4fdfacb4758313bc982eb6c901e4b3168635c4648d4ef0e2e2e94909f6",
+            "page": 1,
+            "quote": "Applicant Name: Iria Zorvanto Prueba",
+            "offset": 102,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "contract.pdf",
+      "field_id": "case_ref",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "CASE-4101",
+          "normalized_value": "CASE-4101",
+          "evidence": {
+            "ref": "contract.pdf:case_ref:1:60",
+            "document_id": "contract.pdf",
+            "document_sha256": "1c35b3bce03a2e2ac61c939a2d40199c2097b4f93bc55f303b8f26beb08c3e66",
+            "page": 1,
+            "quote": "Case Reference: CASE-4101",
+            "offset": 60,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "contract.pdf",
+      "field_id": "applicant_id",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "ID-4101",
+          "normalized_value": "ID-4101",
+          "evidence": {
+            "ref": "contract.pdf:applicant_id:1:86",
+            "document_id": "contract.pdf",
+            "document_sha256": "1c35b3bce03a2e2ac61c939a2d40199c2097b4f93bc55f303b8f26beb08c3e66",
+            "page": 1,
+            "quote": "Applicant ID: ID-4101",
+            "offset": 86,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "contract.pdf",
+      "field_id": "applicant_name",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "Iria Zorvanto Prueba",
+          "normalized_value": "iria zorvanto prueba",
+          "evidence": {
+            "ref": "contract.pdf:applicant_name:1:108",
+            "document_id": "contract.pdf",
+            "document_sha256": "1c35b3bce03a2e2ac61c939a2d40199c2097b4f93bc55f303b8f26beb08c3e66",
+            "page": 1,
+            "quote": "Applicant Name: Iria Zorvanto Prueba",
+            "offset": 108,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    },
+    {
+      "document_id": "contract.pdf",
+      "field_id": "total_amount",
+      "status": "FOUND",
+      "reason": null,
+      "candidates": [
+        {
+          "raw_value": "186.450,00 EUR",
+          "normalized_value": "186450.00 EUR",
+          "evidence": {
+            "ref": "contract.pdf:total_amount:1:161",
+            "document_id": "contract.pdf",
+            "document_sha256": "1c35b3bce03a2e2ac61c939a2d40199c2097b4f93bc55f303b8f26beb08c3e66",
+            "page": 1,
+            "quote": "Total Amount: 186.450,00 EUR",
+            "offset": 161,
+            "accepted": true,
+            "rejection_reason": null
+          }
+        }
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "id": "case_anchor:application.pdf",
+      "status": "PASS",
+      "reason": "Matches external case reference",
+      "evidence_refs": [
+        "application.pdf:case_ref:1:98"
+      ],
+      "compared_values": [
+        "CASE-4101",
+        "CASE-4101"
+      ]
+    },
+    {
+      "id": "case_anchor:certificate.pdf",
+      "status": "PASS",
+      "reason": "Matches external case reference",
+      "evidence_refs": [
+        "certificate.pdf:case_ref:1:54"
+      ],
+      "compared_values": [
+        "CASE-4101",
+        "CASE-4101"
+      ]
+    },
+    {
+      "id": "case_anchor:contract.pdf",
+      "status": "PASS",
+      "reason": "Matches external case reference",
+      "evidence_refs": [
+        "contract.pdf:case_ref:1:60"
+      ],
+      "compared_values": [
+        "CASE-4101",
+        "CASE-4101"
+      ]
+    },
+    {
+      "id": "application_present",
+      "status": "PASS",
+      "reason": "Document count is 1; expected exactly 1",
+      "evidence_refs": [],
+      "compared_values": []
+    },
+    {
+      "id": "contract_present",
+      "status": "PASS",
+      "reason": "Document count is 1; expected exactly 1",
+      "evidence_refs": [],
+      "compared_values": []
+    },
+    {
+      "id": "certificate_present",
+      "status": "PASS",
+      "reason": "Document count is 1; expected exactly 1",
+      "evidence_refs": [],
+      "compared_values": []
+    },
+    {
+      "id": "same_case_ref",
+      "status": "PASS",
+      "reason": "All configured values match",
+      "evidence_refs": [
+        "application.pdf:case_ref:1:98",
+        "contract.pdf:case_ref:1:60",
+        "certificate.pdf:case_ref:1:54"
+      ],
+      "compared_values": [
+        "CASE-4101",
+        "CASE-4101",
+        "CASE-4101"
+      ]
+    },
+    {
+      "id": "same_applicant_id",
+      "status": "PASS",
+      "reason": "All configured values match",
+      "evidence_refs": [
+        "application.pdf:applicant_id:1:124",
+        "contract.pdf:applicant_id:1:86",
+        "certificate.pdf:applicant_id:1:80"
+      ],
+      "compared_values": [
+        "ID-4101",
+        "ID-4101",
+        "ID-4101"
+      ]
+    },
+    {
+      "id": "same_applicant_name",
+      "status": "PASS",
+      "reason": "All configured values match",
+      "evidence_refs": [
+        "application.pdf:applicant_name:1:146",
+        "contract.pdf:applicant_name:1:108",
+        "certificate.pdf:applicant_name:1:102"
+      ],
+      "compared_values": [
+        "iria zorvanto prueba",
+        "iria zorvanto prueba",
+        "iria zorvanto prueba"
+      ]
+    },
+    {
+      "id": "same_total_amount",
+      "status": "PASS",
+      "reason": "All configured values match",
+      "evidence_refs": [
+        "application.pdf:total_amount:2:74",
+        "contract.pdf:total_amount:1:161"
+      ],
+      "compared_values": [
+        "186450.00 EUR",
+        "186450.00 EUR"
+      ]
+    },
+    {
+      "id": "guarantee_if_advance",
+      "status": "NOT_APPLICABLE",
+      "reason": "Condition is verifiably false",
+      "evidence_refs": [
+        "application.pdf:advance_payment:2:103"
+      ],
+      "compared_values": [
+        "0.00 EUR"
+      ]
+    }
+  ],
+  "issues": []
+}
